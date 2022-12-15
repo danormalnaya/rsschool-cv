@@ -4,9 +4,112 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CV</title>
+	<title> Kalieva Gulnara</title>
 </head>
 <body>
-	<h1>Всем привет</h1>
+	<h1>Gulnara Kalieva</h1>
+		<img src = "my_photo1.jpg" width = "270" height = "350" alt = "my_photo">
+	<h2>Junior Frontend Developer</h2>
+	<h3>Contacts</h3>
+	<p>
+		<b>Location:</b> Moscow, Russia 
+	</p>
+	<p>
+		<b>Phone:</b> +7-925-170-35-27
+	</p>
+	<p>
+		<b>E-mail:</b> laurieloko21@gmail.com
+	</p>
+	<p>
+		<b>GitHub:</b> 
+		<a href="https://github.com/danormalnaya" target="_blank">Kalieva Gulnara</a>
+	</p>
+	<h3>Skills</h3>
+	<ul>
+		<li>C, C++</li>
+		<li>HTML5/CSS3</li>
+		<li>MySQL</li>
+		<li>Git, GitHub</li>
+		<li>ProCreate, Figma</li>
+		<li>English: B1</li>
+	</ul>
+	<h3>About myself</h3>
+	<p>I have been working in the restaurant business for more than 10 years. 
+		Thanks to my perseverance and desire, I was promoted to director and there
+		 were three objects in the management. </p>
+	<p>Now I want to change my field of activity, and I have no doubt that my
+		 skills and the ability to think outside the box will be a good addition 
+		 to my work. The old love of mathematics and complex logic problems helped 
+		 in solving being a programmer. </p>
+	<p>I studied at school 42, studied for a year and wrote projects in C and C++. 
+		However, the direction of the backend is not as much interested as 
+		the opportunity to develop in the frontend. I like the combination 
+		of precision of lines, as in architecture, and the search for aesthetics
+		 in design, as in drawing. </p>
+	<p>I have no experience in commercial IT projects. But I'm sure he'll be here soon. </p>
+	<h3>Education</h3>
+		<p>2020-2021</p>
+		<p>Programmer</p>
+		<p>School 42 (Moscow campus)</p>
+		<p>2008-2013</p>
+		<p>Financial Manager</p>
+		<p>Moscow State Industrial University</p>
+	<h3>Courses</h3>
+		<p>Interactive simulator SQL on Stepik</p>
+		<p>The Basics HTLM and CSS on Stepik</p>
+	<h3>Review code on C</h3>
+	<p>Re-code the set of the lib function. 
+		Functions will need to present the same prototype and behaviors as the original.</p>
+		char	*ft_substr(char const *s, unsigned int start, size_t len)
+		{
+			size_t		i;
+			char		*newstr;
+			size_t		slen;
+		
+			if (!s)
+				return (NULL);
+			if (start > ft_strlen(s))
+				return (ft_strdup(""));
+			slen = ft_strlen(s + start);
+			if (slen < len)
+				len = slen;
+			newstr = malloc(len + 1);
+			if (!newstr)
+				return (NULL);
+			i = 0;
+			while (s[start + i] && i < len)
+			{
+				newstr[i] = s[start + i];
+				i++;
+			}
+			newstr[i] = '\0';
+			return (newstr);
+		}
+
+		<h3>Review code on C++</h3>
+		<p>There are two boxes, the first one is A1×B1×C1, the second one is A2×B2×C2. 
+		Determine whether it is possible to place one of these boxes inside the other, 
+		provided that the boxes can only be rotated 90 degrees around the edges.</p>
+		using namespace std;
+int main()
+{
+    int a1, b1, c1, a2, b2, c2;
+    std::cin >> a1 >> b1 >> c1 >> a2 >> b2 >> c2;
+    int min1 = min(a1,min(b1,c1));
+    int max1 = max(a1,max(b1,c1));
+    int mid1 = (a1 + b1 + c1) - min1 - max1;
+    int min2 = min(a2,min(b2,c2));
+    int max2 = max(a2,max(b2,c2));
+    int mid2 = (a2 + b2 + c2) - min2 - max2;
+    if (min1 == min2 && max1 == max2 && mid1 == mid2)
+        std::cout << "Boxes are equal";
+    else if (min1 >= min2 && max1 >= max2 && mid1 >= mid2)
+        std::cout << "The first box is larger than the second one";
+    else if (min1 <= min2 && max1 <= max2 &&  mid1 <= mid2)
+        std::cout << "The first box is smaller than the second one";
+    else
+        std::cout << "Boxes are incomparable";
+  return 0;
+}
 </body>
 </html>
