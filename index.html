@@ -5,11 +5,32 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> Kalieva Gulnara</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
+	<header class = "header">
+		<nav class="nav">
+			<ul class="nav-list">
+			  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+			  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+			  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+			  <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+			  <li class="nav-item"><a href="#about myself" class="nav-link">About myself</a></li>
+			  <li class="nav-item"><a href="#review" class="nav-link">Review code</a></li>
+			</ul>
+		  </nav>
+	<img src = "assets/img/my_photo1.jpg" width ="270" height = "350" alt = "my_photo">
+	<div class = "container">
+	<section class="section-title" id="Kalieva Gulnara">
 	<h1>Gulnara Kalieva</h1>
-		<img src = "my_photo1.jpg" width = "270" height = "350" alt = "my_photo">
 	<h2>Junior Frontend Developer</h2>
+	</section>
+	</div>
+	<main class = "main">
+	<div class = "container">
+	<section class="section-title" id=contacts">
 	<h3>Contacts</h3>
 	<p>
 		<b>Location:</b> Moscow, Russia 
@@ -24,15 +45,8 @@
 		<b>GitHub:</b> 
 		<a href="https://github.com/danormalnaya" target="_blank">Kalieva Gulnara</a>
 	</p>
-	<h3>Skills</h3>
-	<ul>
-		<li>C, C++</li>
-		<li>HTML5/CSS3</li>
-		<li>MySQL</li>
-		<li>Git, GitHub</li>
-		<li>ProCreate, Figma</li>
-		<li>English: B1</li>
-	</ul>
+	</section>
+	<section class="section-title" id=about_myself">
 	<h3>About myself</h3>
 	<p>I have been working in the restaurant business for more than 10 years. 
 		Thanks to my perseverance and desire, I was promoted to director and there
@@ -47,6 +61,19 @@
 		of precision of lines, as in architecture, and the search for aesthetics
 		 in design, as in drawing. </p>
 	<p>I have no experience in commercial IT projects. But I'm sure he'll be here soon. </p>
+	</section>
+	<section class="section-title" id=skills">
+		<h3>Skills</h3>
+		<ul>
+			<li>C, C++</li>
+			<li>HTML5/CSS3</li>
+			<li>MySQL</li>
+			<li>Git, GitHub</li>
+			<li>ProCreate, Figma</li>
+			<li>English: B1</li>
+		</ul>
+		</section>
+	<section class="section-title" id=education">
 	<h3>Education</h3>
 		<p>2020-2021</p>
 		<p>Programmer</p>
@@ -54,12 +81,18 @@
 		<p>2008-2013</p>
 		<p>Financial Manager</p>
 		<p>Moscow State Industrial University</p>
+	</section>
+	<section class="section-title" id=courses">
 	<h3>Courses</h3>
 		<p>Interactive simulator SQL on Stepik</p>
 		<p>The Basics HTLM and CSS on Stepik</p>
+	</section>
+	</div>
+	<section class="section-title" id=review">
 	<h3>Review code on C</h3>
 	<p>Re-code the set of the lib function. 
 		Functions will need to present the same prototype and behaviors as the original.</p>
+	</section>
 		char	*ft_substr(char const *s, unsigned int start, size_t len)
 		{
 			size_t		i;
@@ -85,11 +118,12 @@
 			newstr[i] = '\0';
 			return (newstr);
 		}
-
+		<section class="section-title" id=review">
 		<h3>Review code on C++</h3>
 		<p>There are two boxes, the first one is A1×B1×C1, the second one is A2×B2×C2. 
 		Determine whether it is possible to place one of these boxes inside the other, 
 		provided that the boxes can only be rotated 90 degrees around the edges.</p>
+		</section>
 		using namespace std;
 int main()
 {
@@ -111,5 +145,6 @@ int main()
         std::cout << "Boxes are incomparable";
   return 0;
 }
+<footer class = "footer">
 </body>
 </html>
